@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartAttestation.Android", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartAttestation.iOS", "SmartAttestation.iOS\SmartAttestation.iOS.csproj", "{EB8CE78F-E157-43ED-BE0A-4C9A6354E156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartAttestation", "SmartAttestation\SmartAttestation.csproj", "{1831D6A1-C63E-489F-83A3-CEFFB261D43C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartAttestation", "SmartAttestation\SmartAttestation.csproj", "{1831D6A1-C63E-489F-83A3-CEFFB261D43C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

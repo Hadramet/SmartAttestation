@@ -20,7 +20,7 @@ namespace SmartAttestation.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
+                new HomeMenuItem {Id = MenuItemType.CreateAttestation, Title="Create Attestation" },
                 new HomeMenuItem {Id = MenuItemType.About, Title="About" }
             };
 

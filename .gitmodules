@@ -1,0 +1,3 @@
+[submodule "src/vendor/Covid19-French-Auth"]
+	path = src/vendor/Covid19-French-Auth
+	url = https://github.com/GetLuko/Covid19-French-Auth

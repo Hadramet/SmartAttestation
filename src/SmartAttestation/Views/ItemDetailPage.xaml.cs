@@ -35,5 +35,6 @@ namespace SmartAttestation.Views
             viewModel = new ItemDetailViewModel(item);
             BindingContext = viewModel;
         }
+
     }
 }

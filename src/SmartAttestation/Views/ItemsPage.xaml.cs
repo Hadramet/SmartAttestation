@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
 using SmartAttestation.Models;
-using SmartAttestation.Views;
 using SmartAttestation.ViewModels;
 
 namespace SmartAttestation.Views
@@ -23,7 +16,6 @@ namespace SmartAttestation.Views
         public ItemsPage()
         {
             InitializeComponent();
-
             BindingContext = viewModel = new ItemsViewModel();
         }
 

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace SmartAttestation.Models
 {
-    class Attestation
+    public class Attestation
     {
+        public String Id { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace SmartAttestation.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public IAttestationStore<Attestation> AttestationDataStore => DependencyService.Get<IAttestationStore<Attestation>>();
 
         bool isBusy = false;
         public bool IsBusy
