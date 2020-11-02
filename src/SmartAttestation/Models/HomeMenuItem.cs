@@ -6,6 +6,7 @@ namespace SmartAttestation.Models
 {
     public enum MenuItemType
     {
+        CreateAttestation,
         Browse,
         About
     }
