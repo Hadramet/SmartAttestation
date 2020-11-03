@@ -14,9 +14,20 @@ namespace SmartAttestation.Services
         {
             attestations = new List<Attestation>()
             {
-                new Attestation { Id = "ID1"},
-                new Attestation { Id = "ID2"},
-                new Attestation { Id = "ID3"}
+                new Attestation 
+                { 
+                    Id = Guid.NewGuid().ToString(),
+                    FirstName = "Hadramet",
+                    LastName = "Sylla",
+                    Address = "24 Square des Hautes Chalais",
+                    BirthDay = "14/02/1996",
+                    PlaceOfBirth = "Conakry",
+                    City = "Rennes",
+                    ZipCode = "35200",
+                    OutTime = "16:20",
+                    Reason = OutReason.travail, 
+                    Date = "03/11/2020"
+                }
             };
         }
         public async Task<bool> AddAttestationAsync(Attestation attestation)

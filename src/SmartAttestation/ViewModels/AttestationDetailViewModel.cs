@@ -11,7 +11,7 @@ namespace SmartAttestation.ViewModels
 
         public AttestationDetailViewModel(Attestation attestation = null)
         {
-            Title = attestation?.Id;
+            Title = attestation?.Reason.ToString()+":"+ attestation?.Date+"/"+attestation?.OutTime ;
             Attestation = attestation;
         }
     }

@@ -11,7 +11,11 @@
         <ToolbarItem Text="Delete" Clicked="DeleteAttestation_Clicked"/>
     </ContentPage.ToolbarItems>
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Id:" FontSize="Medium" />
-        <Label Text="{Binding Attestation.Id}" d:Text="Attestation Id" FontSize="Small"/>
+        <Label Text="Reason:" FontSize="Medium" />
+        <Label Text="{Binding Attestation.Reason}" d:Text="Attestation Id" FontSize="Small"/>
+        <Label Text="Date:" FontSize="Medium" />
+        <Label Text="{Binding Attestation.Date}" d:Text="Attestation Id" FontSize="Small"/>
+        <Label Text="Out Time:" FontSize="Medium" />
+        <Label Text="{Binding Attestation.OutTime}" d:Text="Attestation Id" FontSize="Small"/>
     </StackLayout>
 </ContentPage>
