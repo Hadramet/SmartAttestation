@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SmartAttestation.Views.NewAttestationPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="First Name" FontSize="Medium" />
+            <Entry Text="{Binding Attestation.FirstName}" d:Text="First Name" FontSize="Small" />
+            <Label Text="Last Name" FontSize="Medium" />
+            <Entry Text="{Binding Attestation.LastName}" d:Text="Last Name" FontSize="Small" />
+            <Label Text="Date of Birth" FontSize="Medium" />
+            <Entry Text="{Binding Attestation.BirthDay}" d:Text="Birth Day" FontSize="Small" />
+            <Label Text="Place of Birth" FontSize="Medium" />
+            <Entry Text="{Binding Attestation.PlaceOfBirth}" d:Text="Place Of Birth" FontSize="Small" />
+            <Label Text="Address" FontSize="Medium" />
+            <Entry Text="{Binding Attestation.Address}" d:Text="Address" FontSize="Small" />
+            <Label Text="Zip" FontSize="Medium" />
+            <Entry Text="{Binding Attestation.ZipCode}" d:Text="32000" FontSize="Small" />
+            <Label Text="City" FontSize="Medium" />
+            <Entry Text="{Binding Attestation.City}" d:Text="City" FontSize="Small" />
+            <Label Text="Date" FontSize="Medium" />
+            <Entry Text="{Binding Attestation.Date}" d:Text="Out date" FontSize="Small" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
