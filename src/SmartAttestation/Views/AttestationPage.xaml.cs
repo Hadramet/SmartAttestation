@@ -35,5 +35,12 @@ namespace SmartAttestation.Views
             if (viewModel.Attestations.Count == 0)
                 viewModel.IsBusy = true;
         }
+
+        void DeleteAttestion_Cliked(object sender, EventArgs e)
+        {
+            var layout = (BindableObject)sender;
+            var attestation = (Attestation)layout.BindingContext;
+            MessagingCenter.Send(this, "RemoveAttestation", attestation);
+        }
     }
 }

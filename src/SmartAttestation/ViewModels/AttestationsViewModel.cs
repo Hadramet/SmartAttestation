@@ -19,6 +19,8 @@ namespace SmartAttestation.ViewModels
         {
             Title = "CreateAttestation";
             Attestations = new ObservableCollection<Attestation>();
+
+            // Commands
             LoadAttestationsCommand = new Command(async () => await ExecuteLoadIAttestationsCommand());
 
             MessagingCenter.Subscribe<NewAttestationPage, Attestation>(this, "AddAttestation", async (obj, attestation) =>
@@ -27,6 +29,14 @@ namespace SmartAttestation.ViewModels
                 Attestations.Add(newAttestation);
                 await AttestationDataStore.AddAttestationAsync(newAttestation);
             });
+
+            MessagingCenter.Subscribe<AttestationPage, Attestation>(this, "RemoveAttestation", async (obj, attestation) =>
+             {
+                 var oldAttestation = attestation as Attestation;
+                 Attestations.Remove(oldAttestation);
+                 await AttestationDataStore.DeleteAttestationAsync(oldAttestation.Id);
+                 await ExecuteLoadIAttestationsCommand();
+             });
         }
 
         private async Task ExecuteLoadIAttestationsCommand()
