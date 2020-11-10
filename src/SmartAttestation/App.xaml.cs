@@ -12,10 +12,8 @@ namespace SmartAttestation
         public App()
         {
             InitializeComponent();
-
             DependencyService.Register<MockDataStore>();
-            DependencyService.Register<MockAttestationDataStore>();
-           
+            DependencyService.Register<MockAttestationDataStore>();           
             MainPage = new MainPage();
         }
 
